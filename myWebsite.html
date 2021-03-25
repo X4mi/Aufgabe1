@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Maximilian Kiermeier">
+    <title>Document</title>
+    <base href="mywebsite.html">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="mywebsite.css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>
+                <pre> __  __            _      __          __  _         _ _       
+|  \/  |          (_)     \ \        / / | |       (_) |      
+| \  / | __ ___  ___ ___   \ \  /\  / /__| |__  ___ _| |_ ___ 
+| |\/| |/ _` \ \/ / / __|   \ \/  \/ / _ \ '_ \/ __| | __/ _ \
+| |  | | (_| |>  <| \__ \    \  /\  /  __/ |_) \__ \ | ||  __/
+|_|  |_|\__,_/_/\_\_|___/     \/  \/ \___|_.__/|___/_|\__\___|                
+                </pre>                
+            </h1>
+            <h2>WebDev Aufgabe 1</h2>
+        </hgroup>
+    </header>
+    <!-- Links -->
+    <!-- H4-6 -->
+    <!-- Track? -->
+    <!-- Noscript -->
+    <!-- Template -->
+    <!-- Slot -->
+
+    <aside title="navbar">
+        <h2>Naviagtion</h2>
+        <nav>
+            <menu>
+             <li><a href="#article">Article</a></li>
+             <li><a href="#section">Section</a></li>
+            </menu>
+        </nav>
+    </aside>
+    <main>
+        <article id="article">
+            <h3>Article</h3>
+            <hr>
+            <div>
+                <figcaption>
+                    <blockquote>
+                        <q>The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.</q>
+                </blockquote>
+                <p><small>— Albert Einstein</small></p>
+                </figcaption>
+            </div>
+                <div>
+                <ol>
+                    <li>Punkt 1</li>
+                    <li>Punkt 2</li>
+                </ol>
+                <ul>
+                    <li>Punkt 1</li>
+                    <li>Punkt 2</li>
+                </ul>
+                <dl>
+                    <dt>Obergruppe1</dt>
+                    <dd>Unterpunkt1</dd> 
+                    <dd>Unterpunkt2</dd>  
+                    <dt>Obergruppe2</dt>
+                    <dd>Unterpunkt1</dd>  
+                </dl>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://www.google.de">Google</a></li>
+                    <li>Ich bin <em>richtig</em> gut drauf.</li>
+                    <li>Ich bin <strong>richtig</strong> gut drauf.</li>
+                    <li>Ich bin <small>richtig</small> gut drauf.</li>
+                    <li>Ich bin <s>richtig</s> gut drauf.</li>
+                    <li>Ich bin <cite>richtig</cite> gut drauf.</li>
+                    <li>Ich bin <q>richtig</q> gut drauf.</li> 
+                    <li>Ich bin <dfn id="GARNICHT"><abbr title="GARNICHT">richtig</abbr></dfn> gut drauf.</li>
+                    <li>Ich bin <ruby>richtig<rt>garned</ruby> gut drauf.</li> 
+                    <li>Ich bin <ruby>richtig<rp>vielleicht</rp><rt>garned</ruby> gut drauf.</li> 
+                    <li>Ich bin richtig <data value="0"> gut drauf.</li> 
+                    <li>Ich bin <code>system.richtig()</code> gut drauf.</li> 
+                    <li>Ich bin <var>richtig</var> gut drauf.</li> 
+                    <li>Ich bin <samp>richtig</samp> gut drauf.</li> 
+                    <li>Ich bin richtig gut drauf. Bitte <kbd>Alt+F4</kbd> drücken.</li> 
+                    <li>Ich bin <sub>richtig</sub> gut drauf.</li> 
+                    <li>Ich bin <sup>richtig</sup> gut drauf.</li> 
+                    <li>Ich bin <i lang="en">totally</i> gut drauf.</li> 
+                    <li>Ich bin <b>richtig</b> gut drauf.</li> 
+                    <li>Ich bin <u>richtig</u> gut drauf.</li> 
+                    <li>Ich bin <mark>richtig</mark> gut drauf.</li> 
+                    <li>Ich bin <bdi>richtig</bdi> gut drauf.</li> 
+                    <li>Ich bin <bdo>richtig</bdo> gut drauf.</li> 
+                    <li>Ich bin <span>richtig</span> gut drauf.</li> 
+                    <li>Ich bin richtig <br> gut drauf.</li> 
+                    <li>Ich bin richtig <wbr> gut drauf.</li> 
+                    <li><ins>Ich bin richtig gut drauf.</ins></li> 
+                    <li><del>Ich bin richtig gut drauf.</del></li> 
+                </ul>
+            </div>         
+            <figure>
+                <picture>
+                    <source srcset="src/bild.jpg" media="(min-width: 1200px)">
+                    <source srcset="src/bild2.jpg" media="(min-width: 600px)">
+                    <img src="src/train.jpg" alt="Ice" height="200" width="400">
+                 </picture>
+            </figure>
+            <figure>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/BWs0Ccfw_2Y" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </figure>
+            <figure>
+                <embed src="src/cat.gif" width="400" height="200" title="CatGif">
+            </figure>
+            <figure> 
+                <object data="src/pow.webp" width="400" height="200" title="Pow">
+                    <param name="autoplay" value="true">
+                </object>
+            </figure>
+            <figure> 
+                <video width="400" height="200" controls>
+                    <source src="src/streamclip.mp4" type="video/mp4"> 
+                    <track src="src/track.vtt" default>                
+                    Konnte nicht abgespielt werden
+                </video>
+            </figure>
+            <figure> 
+                <audio controls>
+                    <source src="src/instant-hype-button.mp3" type="audio/mpeg">
+                    Konnte nicht abgespielt werden
+                  </audio>
+            </figure>
+            <figure> 
+                <img src="src/mapexample.jpg" alt="Workplace" usemap="#workmap" width="400" height="200">
+                <map name="workmap">
+                  <area shape="rect" coords="0,0,200,100" alt="Corn" href="src/corn.png">
+                  <area shape="rect" coords="200,0,400,100" alt="Taco" href="src/taco.png">
+                  <area shape="rect" coords="0,100,200,200" alt="Burrito" href="src/burrito.jpg">
+                  <area shape="rect" coords="200,100,400,200" alt="Coffee" href="src/coffee.jpg">
+                </map>
+            </figure>
+        </article>
+        <section id="section"> 
+            <h3>Section</h3>
+            <p>Tabelle mit colgroup</p>
+            <div>
+                <table>
+                    <caption> Meine Tabelle mit colgroup</caption>
+                    <colgroup>
+                        <col span="2">
+                    </colgroup>
+                    <tr>
+                        <th>Länder</th>
+                        <th>Hauptstädte</th>
+                    </tr>
+                    <tr>
+                        <td>USA</td>
+                        <td>Washington D.C.</td>
+                    </tr>
+                    <tr>
+                        <td>Schweden</td>
+                        <td>Stockholm</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>Tabelle mit thead, tfoot, and tbody</p>
+                <table>
+                    <caption> Meine Tabelle mit colgroup</caption>
+                    <thead>
+                        <tr>
+                        <th>Länder</th>
+                        <th>Hauptstädte</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                        <td>USA</td>
+                        <td>Washington D.C.</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                        <td>Schweden</td>
+                        <td>Stockholm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <form action="https://www.google.com/search" method="get">
+                    <label>Google: <input type="search" name="q"></label> 
+                    <button type="submit">Search...</button>
+                </form>
+            </div>
+            <div>
+                <label>
+                    Auswahl eingeben
+                    <input name=eingabe list=eingabe>
+                </label>
+                   <datalist id=eingabe>
+                    <label>
+                     or select from the list:
+                     <select name=eingabe>
+                      <option value="">
+                      <option>Eingabe1
+                      <option>Eingabe2
+                     </select>
+                    </label>
+                   </datalist>
+            </div>
+            <div>
+                <label>Auswahl treffen:</label>
+                <select multiple>
+                <optgroup label="Auswahlgruppe1"></optgroup>
+                 <option value="1" selected> Auswahl1.1 </option>
+                 <option value="2" selected> Auswahl1.2 </option>
+                 <option value="3" selected> Auswahl1.3 </option>
+                 <optgroup label="Auswahlgruppe2"></optgroup>
+                 <option value="4" selected> Auswahl2.1 </option>
+                 <option value="5" selected> Auswahl2.2 </option>
+                </select>
+            </div>
+            <div>
+                <textarea required minlength="500">
+                   Hier kann man text schreiben
+
+                   und noch weiter editieren ...
+                    
+                    ...
+                    
+                    mit Zeilenumbürchen etc.
+                    
+                    ...</textarea>
+            </div>
+            <div>
+                <form onsubmit="return false" oninput="o.value = a.valueAsNumber * b.valueAsNumber">
+                    <input id=a type=number step=any> *
+                    <input id=b type=number step=any> =
+                    <output id=o for="a b"></output>
+                </form>
+            </div>
+            <div>    
+                Zu 40% geladen
+                <br>
+                Ladung: <meter min=0 max=100 value=40>40%</meter>
+                <br>
+                Laden: <progress max="100" value="40"></progress> 40%
+                <details>
+                <summary>klapp mich auf</summary>
+                <p>es lädt langsam</p>
+                </details>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Display</legend>
+                    <p><label><input type=radio name=c value=0 checked> An</label>
+                    <p><label><input type=radio name=c value=1> Aus</label>
+                    <p><label><input type=checkbox name=g> Stromsparmodus</label>
+                    <p><label> Lautstärke <input type=range name=e list=contrast min=0 max=100 value=0 step=1></label>
+                    <datalist id=contrast>
+                     <option label=Normal value=0>
+                     <option label=Maximum value=100>
+                    </datalist>
+                   </fieldset>
+            </div>
+            <div>    
+                <dialog id="dial">
+                    <p>Hallo euch allen!</p>
+                    <button id="close-dialog">Schließen</button>	
+                </dialog>
+                <button id="open-dialog">Open Dialog</button>
+                <script type="text/javascript">
+                    document.querySelector('#open-dialog').addEventListener('click', toggleDialog);
+                    function toggleDialog(event){ 
+                        var dialog = document.querySelector('dialog'),
+                            closebutton = document.getElementById('close-dialog'),
+                            lastFocus = event.target;
+                        if (!dialog.hasAttribute('open')) {
+                            dialog.setAttribute('open','open');
+                            closebutton.focus();
+                            closebutton.addEventListener('click', toggleDialog);
+                        }
+                        else {		
+                            dialog.removeAttribute('open');  
+                            var div = document.querySelector('#backdrop');  
+                        }
+                    }
+                    </script>
+            </div>
+            <div> 
+                <button onclick="draw()">Click Me</button>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                <script>
+                    function draw()
+                    {
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.font = "30px Arial";
+                    ctx.fillText("Hello World!", 10, 50);
+                    }
+                </script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address>
+         Für weitere Infos:
+         <a href="mailto:maximilian.kiermeier@hof-university.de">Maximilian Kiermeier</a>.
+        </address>
+        <p><small>Made by Maximilian Kiermeier <time>2021-03</time></small></p>
+    </footer>
+</body>
+</html>
