@@ -5,7 +5,46 @@
     <meta name="Author" content="Maximilian Kiermeier">
     <title>Document</title>
     <base href="mywebsite.html">
-    <style type="text/css"></style>
+    <style type="text/css">
+    div {
+        background: lightgray;
+        border: 1px solid black;
+        display: flex;
+        padding: 10px;
+    }
+    figure {
+        background: lightgray;
+        border: 1px solid black;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+    }
+    article {
+        background: darkgray;
+        border: 1px solid black;
+        padding: 5px;
+        width: 508px ;
+    }
+    section {
+        background: darkgray;
+        border: 1px solid black;
+        padding: 5px;
+        width: 508px 
+    }
+    body {
+        background: deepskyblue;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    aside {
+        background: darkgray;
+        border: 1px solid black;
+        padding: 20x;
+        padding-left: 20px;
+        width: 200px;
+    }
+    
+    </style>
     <link rel="stylesheet" href="mywebsite.css">
 </head>
 <body>
@@ -51,15 +90,19 @@
                 <p><small>— Albert Einstein</small></p>
                 </figcaption>
             </div>
-                <div>
+            <div>
                 <ol>
                     <li>Punkt 1</li>
                     <li>Punkt 2</li>
                 </ol>
+            </div>
+            <div>
                 <ul>
                     <li>Punkt 1</li>
                     <li>Punkt 2</li>
                 </ul>
+            </div>
+            <div>
                 <dl>
                     <dt>Obergruppe1</dt>
                     <dd>Unterpunkt1</dd> 
@@ -143,7 +186,7 @@
         </article>
         <section id="section"> 
             <h3>Section</h3>
-            <p>Tabelle mit colgroup</p>
+            <hr>
             <div>
                 <table>
                     <caption> Meine Tabelle mit colgroup</caption>
@@ -165,9 +208,8 @@
                 </table>
             </div>
             <div>
-                <p>Tabelle mit thead, tfoot, and tbody</p>
                 <table>
-                    <caption> Meine Tabelle mit colgroup</caption>
+                    <caption> Tabelle mit thead, tfoot, and tbody </caption>
                     <thead>
                         <tr>
                         <th>Länder</th>
@@ -247,10 +289,12 @@
                 Ladung: <meter min=0 max=100 value=40>40%</meter>
                 <br>
                 Laden: <progress max="100" value="40"></progress> 40%
+            </div>
+            <div>
                 <details>
-                <summary>klapp mich auf</summary>
-                <p>es lädt langsam</p>
-                </details>
+                    <summary>klapp mich auf</summary>
+                    <p>es lädt langsam</p>
+                    </details>
             </div>
             <div>
                 <fieldset>
@@ -258,11 +302,7 @@
                     <p><label><input type=radio name=c value=0 checked> An</label>
                     <p><label><input type=radio name=c value=1> Aus</label>
                     <p><label><input type=checkbox name=g> Stromsparmodus</label>
-                    <p><label> Lautstärke <input type=range name=e list=contrast min=0 max=100 value=0 step=1></label>
-                    <datalist id=contrast>
-                     <option label=Normal value=0>
-                     <option label=Maximum value=100>
-                    </datalist>
+                    <p><label> Lautstärke <input type=range min=0 max=100 value=50 step=1></label>
                    </fieldset>
             </div>
             <div>    
@@ -273,25 +313,22 @@
                 <button id="open-dialog">Open Dialog</button>
                 <script type="text/javascript">
                     document.querySelector('#open-dialog').addEventListener('click', toggleDialog);
+                    document.querySelector('#close-dialog').addEventListener('click', toggleDialog);
                     function toggleDialog(event){ 
-                        var dialog = document.querySelector('dialog'),
-                            closebutton = document.getElementById('close-dialog'),
-                            lastFocus = event.target;
+                        var dialog = document.querySelector('#dial');
+                        var closebutton = document.querySelector('#close-dialog');
                         if (!dialog.hasAttribute('open')) {
                             dialog.setAttribute('open','open');
-                            closebutton.focus();
-                            closebutton.addEventListener('click', toggleDialog);
                         }
                         else {		
                             dialog.removeAttribute('open');  
-                            var div = document.querySelector('#backdrop');  
                         }
-                    }
+                    }  
                     </script>
             </div>
             <div> 
-                <button onclick="draw()">Click Me</button>
-                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                <div><button onclick="draw()">Click Me</button></div>
+                <div><canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas></div>      
                 <script>
                     function draw()
                     {
